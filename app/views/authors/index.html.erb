@@ -1,0 +1,11 @@
+<h1>All Authors</h1>
+
+We have <%= @authors.count%> authors.
+
+<ul>
+<% @authors.each do |author| author%>
+<li>
+<%= "#{author.first_name} #{author.last_name}, Authored #{author.number_of_books}  books. Alive: #{author.alive}" %>
+</li>
+<% end %>
+</ul>
